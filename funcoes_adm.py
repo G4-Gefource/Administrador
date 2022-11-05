@@ -3,14 +3,16 @@ import msvcrt
 
 # FUNÇÕES
 
-def limpar():  
+
+def limpar():  # FUNÇÃO PARA LIMPAR A TELA
     os.system("cls")
 
-def pausa(): 
+
+def pausa():  # FUNÇÃO PARA PAUSAR O SISTEMA
     print('\nPressione qualquer tecla para continuar...\n')
     char = msvcrt.getch()
 
-def menu():
+def menu():  # FUNÇÃO PARA MENU 
     print('1 - Adicionar\n')
     print('2 - Remover \n')
     print('3 - Visualizar os serviços\n')
@@ -18,4 +20,4 @@ def menu():
 
 def apresentacao():
     print("Olá seja bem vindo ao setor administrativo do Eventum\n")
-    print("Por favor precione 1 para adicionar as informaçoes do seu serviços: \n")
+    print("Por favor adicione as informaçoes do seu serviço a seguir\n")
