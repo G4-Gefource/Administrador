@@ -22,11 +22,11 @@ while aux==1:
     funcoes_adm.menu()
     escolha=int(input(" "))
     flux=1
+    servcont=1
 
     while flux == 1:
         if escolha==1:
 
-            servcont=1
 
             if servcont==1:
                 funcoes_adm.limpar()
