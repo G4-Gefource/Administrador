@@ -19,5 +19,5 @@ def menu():  # FUNÇÃO PARA MENU
     print('0 - Sair\n')
 
 def apresentacao():
-    print("Olá seja bem vindo ao setor administrativo do Eventum\n")
+    print("Olá, seja bem vindo ao setor administrativo do Eventum\n")
     print("Por favor adicione as informaçoes do seu serviço a seguir\n")
