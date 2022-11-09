@@ -1,3 +1,16 @@
+'''
+           Lista o que precisa fazer 
+           
+           1)Terminar função Atualizar 
+           2)Terminar funçâo Delete
+           
+           
+
+
+'''
+
+
+
 import funcoes_adm
 
 funcoes_adm.limpa()
