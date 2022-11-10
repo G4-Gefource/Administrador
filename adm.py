@@ -1,33 +1,32 @@
-'''
-           Lista o que precisa fazer 
-           
-           1)Terminar função Atualizar 
-           2)Terminar funçâo Delete
-           
-           
-
-
-'''
-
-
-
 import funcoes_adm
 
 funcoes_adm.limpa()
 
 # PONTOS TURÍSTICOS CADASTRADOS
 pontos = [{'NOME': 'RESTAURANTE A', 'NOTA': 9.45,
-           'LOCALIZAÇÃO': '300m de distância'},
+           'LOCALIZAÇÃO': '300m de distância',
+           'DESCRIÇÃO':
+           'Restaurante familiar, bem localizado, com uma grande variedade de comidas regionais.'},
           {'NOME': 'BAR B', 'NOTA': 9.05,
-           'LOCALIZAÇÃO': '600m de distância'},
+           'LOCALIZAÇÃO': '600m de distância',
+           'DESCRIÇÃO':
+           'Bar conhecido por noites com música e preço baixo.'},
           {'NOME': 'PRAIA C', 'NOTA': 8.75,
-           'LOCALIZAÇÃO': '100m de distância'},
+           'LOCALIZAÇÃO': '100m de distância',
+           'DESCRIÇÃO':
+           'Uma das praias mais procuradas de Maceió, o local perfeito para aproveitar um dia de sol.'},
           {'NOME': 'PASSEIO D', 'NOTA': 8.50,
-           'LOCALIZAÇÃO': '1km de distância'},
+           'LOCALIZAÇÃO': '1km de distância',
+           'DESCRIÇÃO':
+           'Um passeio inesquecível para Maceió, preço baixo e melhor qualidade.'},
           {'NOME': 'CAFÉ E', 'NOTA': 9.85,
-           'LOCALIZAÇÃO': '400m de distância'},
+           'LOCALIZAÇÃO': '400m de distância',
+           'DESCRIÇÃO':
+           'Ambiente familiar, com uma grande variedade de refeições para agradar todos os gostos.'},
           {'NOME': 'LUAU F', 'NOTA': 7.95,
-           'LOCALIZAÇÃO': '800m de distância'}]
+           'LOCALIZAÇÃO': '800m de distância',
+           'DESCRIÇÃO':
+           'Um ambiente ideal para casais que querem aproveitar o Maceió da forma mais romântica.'}]
 
 op = 1
 print('BEM VINDO AO SETOR ADMINISTRATIVO DO EVENTUM!\n')
@@ -40,6 +39,7 @@ while op != 0:
         d['NOME'] = input('Informe o nome do estabelecimento: ').upper()
         d['NOTA'] = float(input('Informe a nota do estabelecimento: '))
         d['LOCALIZAÇÃO'] = input('Informe a distância do ponto para o hotel: ')
+        d['DESCRIÇÃO'] = input('Informe a descrição do ponto')
         pontos.append(d)
         print('Ponto adicionado com sucesso!')
         funcoes_adm.pausa()
@@ -63,8 +63,15 @@ while op != 0:
         if len(ponto_local) < 1:
             print('Este ponto não está registrado.')
         else:
-            print('Esse ponto tá aqui ó')
+            print('')
+            funcoes_adm.pausa()
         funcoes_adm.pausa()
     elif op == 5:
         print()
+    elif op == 0:
+        print('Operação encerrada.')
+        funcoes_adm.pausa()
+    else:
+        print('Opção inválida.')
+        funcoes_adm.pausa()
     funcoes_adm.limpa()
