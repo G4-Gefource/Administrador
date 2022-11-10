@@ -26,3 +26,4 @@ def exibe_ponto(ponto):
     print(f'Nome do estabelecimento: {(ponto["NOME"]).title()};')
     print(f'Nota do estabelecimento: {ponto["NOTA"]};')
     print(f'Localização do ponto: {ponto["LOCALIZAÇÃO"]} do hotel;')
+    print(f'Descrição do ponto: {ponto["DESCRIÇÃO"]};')
