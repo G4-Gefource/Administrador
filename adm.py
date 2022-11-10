@@ -78,7 +78,7 @@ while op != 0:
                 pontos.remove(ponto_local[0])
                 print('Ponto removido com sucesso!')
             else:
-                print('Operação cancelada.')
+                print('Operação cancelada com successo!.')
         funcoes_adm.pausa()
     elif op == 5:
         print()
